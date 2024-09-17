@@ -4,7 +4,7 @@ import NewWord from './NewWord.tsx';
 import Home from './Home.tsx';
 
 function App() {
-  return <BrowserRouter>
+  return <BrowserRouter basename="/vocab" >
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/new-word" element={<NewWord />} />
